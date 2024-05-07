@@ -55,5 +55,6 @@ playAgain.addEventListener("click", () => {
     button.innerText = "";
     winner.classList.add("hide");
     playAgain.classList.add("hide");
+    button.disabled = false;
   }
 })
