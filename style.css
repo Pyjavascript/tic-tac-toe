@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    position:relative;
+    overflow: hidden;
+}
+h1{
+    background-color:#000000df;
+    width:100vw;
+    text-align: center;
+    font-size: 10vmin;
+    margin:2vmin 0;
+    color:blueviolet;
+}
+.outerbox{
+    width:90vmin;
+    padding:2vmin 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.gamebox{
+    width:65vmin;
+    box-shadow:0 0 30px rgba(141, 18, 255, 0.084);
+    border-radius: 15px;
+    display:flex;
+    justify-content:center;
+    gap:2vmin;
+    flex-wrap: wrap;
+    padding:2vmin;
+}
+.gamebox .btn{
+    border: navajowhite;
+    height:20vmin;
+    width:20vmin;
+    border-radius: 15px;
+    font-size:15vmin;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:brown;
+}
+.play-again{
+    background-color:#000000df;
+    color:#fff;
+    padding:2vmin 4vmin;
+    border-radius:25px;
+    font-weight: 600;
+    transition:.2s;
+    animation:btnMove .3s forwards;
+}
+.play-again:hover{
+    background-color:blueviolet;
+
+}
+.hide{
+    display:none;
+}
+.win{
+    padding:2vmin 4vmin;
+    background-color:blueviolet;
+    color: #fff;
+    font-size: 10vmin;
+    transform:rotate(90deg) translate(-50%, -50%);
+    position:absolute;
+    top:70vmin;
+    animation:move .3s forwards;
+}
+@keyframes move {
+    from{
+        right: -150px;
+        opacity:0;
+    }
+    to{
+        right:-22px;
+        opacity:1;
+    }
+}
+@keyframes btnMove {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
